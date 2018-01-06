@@ -1,6 +1,20 @@
 nameInput=raw_input("Input a name.")
-nameOutput=""
+firstName=""
+lastName=""
+dropped=""
+words=[]
+words=nameInput.split()
 
-#TODO:Cut the name then find first name and last name
+#for English using country
+if len(words)>1:
+    firstName=words[0]
+    lastName=words[1]
+    words.pop(0)
+    words.pop(0)
+    dropped=words
+else:
+    print"Wrong Input!"
 
-print nameOutput
+print "First name is:"+firstName
+print "Last name is:"+lastName
+print "Dropped:"+str(dropped)
