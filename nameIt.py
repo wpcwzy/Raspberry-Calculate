@@ -14,9 +14,8 @@ if len(words) > 1:
     words.pop(0)
     words.pop(0)
     dropped = words
+    print "First name is:" + firstName
+    print "Last name is:" + lastName
+    print "Dropped:" + str(dropped)
 else:
     print"Wrong Input!"
-
-print "First name is:" + firstName
-print "Last name is:" + lastName
-print "Dropped:" + str(dropped)
