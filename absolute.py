@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 numberIn = float(raw_input("Type the input number"))
 numberOut = 0.0
 

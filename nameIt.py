@@ -1,20 +1,22 @@
-nameInput=raw_input("Input a name.")
-firstName=""
-lastName=""
-dropped=""
-words=[]
-words=nameInput.split()
+# -*- coding: utf-8 -*-
 
-#for English using country
-if len(words)>1:
-    firstName=words[0]
-    lastName=words[1]
+nameInput = raw_input("Input a name.")
+firstName = ""
+lastName = ""
+dropped = ""
+words = []
+words = nameInput.split()
+
+# for English using country
+if len(words) > 1:
+    firstName = words[0]
+    lastName = words[1]
     words.pop(0)
     words.pop(0)
-    dropped=words
+    dropped = words
 else:
     print"Wrong Input!"
 
-print "First name is:"+firstName
-print "Last name is:"+lastName
-print "Dropped:"+str(dropped)
+print "First name is:" + firstName
+print "Last name is:" + lastName
+print "Dropped:" + str(dropped)
