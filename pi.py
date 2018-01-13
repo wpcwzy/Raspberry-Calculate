@@ -52,7 +52,9 @@ def pi(inputNumber):
 
     time2 = time.time()
     print u'总共耗时：' + str(time2 - time1) + 's'
+    return result,str(time2-time1)
 
 
-if __name__ == "__main__"
-    pi(raw_input("Please input a number you want:"))
+if __name__ == "__main__":
+    output=pi(raw_input("Please input a number you want:"))
+    print output

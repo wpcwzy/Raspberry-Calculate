@@ -9,7 +9,9 @@ def abs(numberInput):
         numberOut = numberIn
 
     print numberOut
+    return numberOut
 
 
 if __name__ == "__main__":
-    abs(raw_input("Please input a number:"))
+    result = abs(raw_input("Please input a number:"))
+    print "Result=" + result
