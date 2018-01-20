@@ -58,3 +58,4 @@ try:
         print output
 except ValueError:
     print "Is that a vaild input?"
+    exit(1)

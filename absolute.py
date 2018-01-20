@@ -18,3 +18,4 @@ try:
         print "Result=" + result
 except ValueError:
     print "Is that a vaild input?"
+    exit(1)
