@@ -2,6 +2,7 @@
 from __future__ import division
 ####################导入时间模块
 import time
+
 try:
     def pi(inputNumber):
         ################算法根据马青公式计算圆周率####################
@@ -59,3 +60,4 @@ try:
 except ValueError:
     print "Is that a vaild input?"
     exit(1)
+# TODO:Fix module import problem.
