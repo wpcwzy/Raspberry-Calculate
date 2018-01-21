@@ -3,7 +3,8 @@ from __future__ import division
 import time
 import sys
 
-#absolute funtion
+
+# absolute function
 def abs(numberInput):
     try:
         numberIn = float(numberInput)
