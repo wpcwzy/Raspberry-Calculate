@@ -13,6 +13,7 @@ try:
         else:
             numberOut = numberIn
 
+        print numberOut
         return numberOut
 
 
@@ -32,6 +33,9 @@ try:
             words.pop(0)
 
             dropped = words
+            print "First name is:" + firstName
+            print "Last name is:" + lastName
+            print "Dropped:" + str(dropped)
             if outputThing == 0:
                 return firstName
             else:
@@ -40,7 +44,7 @@ try:
                 else:
                     return dropped
         else:
-            return 1  # Error.
+            print"Wrong Input!"
             exit(1)
 
 
@@ -87,8 +91,10 @@ try:
         ############ 输出圆周率π的值
         paistring = str(pai)
         result = paistring[0] + str('.') + paistring[1:len(paistring)]
+        print result
 
         time2 = time.time()
+        print u'总共耗时：' + str(time2 - time1) + 's'
         return result, str(time2 - time1)
 
 
