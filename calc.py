@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 from __future__ import division
 import time
+import sys
 
-try:
-    # absolute function
-    def abs(numberInput):
+#absolute funtion
+def abs(numberInput):
+    try:
         numberIn = float(numberInput)
         numberOut = 0.0
 
@@ -14,10 +15,22 @@ try:
             numberOut = numberIn
 
         return numberOut
+    except ValueError:
+        print "Triggered Value Error.\nIs that a vaild input?"
+        exit(1)
+    except ImportError:
+        print"Triggered Import Error.\nTry sudo apt upgrade"
+        exit(1)
+    except KeyboardInterrupt:
+        print"Triggered Keyboard Interrupt.\nProgram Stopped."
+        exit(1)
+    except:
+        print"Triggered Unknow Error."
+        exit(1)
 
-
-    # pick the name function
-    def nameIt(inputName, outputThing):  # if outputThing=0,then output the first name.
+# pick the name function
+def nameIt(inputName, outputThing):  # if outputThing=0,then output the first name.
+    try:
         nameInput = inputName  # if outputThing=1,then output the last name.
         firstName = ""  # if outputThing=2,then output dropped.
         lastName = ""
@@ -42,9 +55,22 @@ try:
         else:
             return 1  # Error.
             exit(1)
+    except ValueError:
+        print "Triggered Value Error.\nIs that a vaild input?"
+        exit(1)
+    except ImportError:
+        print"Triggered Import Error.\nTry sudo apt upgrade"
+        exit(1)
+    except KeyboardInterrupt:
+        print"Triggered Keyboard Interrupt.\nProgram Stopped."
+        exit(1)
+    except:
+        print"Triggered Unknow Error."
+        exit(1)
 
-
-    def pi(inputNumber):
+#calculate pi function
+def pi(inputNumber):
+    try:
         ################算法根据马青公式计算圆周率####################
 
         number = int(inputNumber)
@@ -90,14 +116,12 @@ try:
 
         time2 = time.time()
         return result, str(time2 - time1)
-
-
-except ValueError:
-    print "Triggered Value Error.\nIs that a vaild input?"
-    exit(1)
-except ImportError:
-    print"Triggered Import Error.\nTry sudo apt upgrade"
-    exit(1)
-except KeyboardInterrupt:
-    print"Triggered Keyboard Interrupt.\nProgram Stopped."
-    exit(0)
+    except ValueError:
+        print "Triggered Value Error.\nIs that a vaild input?"
+        exit(1)
+    except ImportError:
+        print"Triggered Import Error.\nTry sudo apt upgrade"
+        exit(1)
+    except KeyboardInterrupt:
+        print"Triggered Keyboard Interrupt.\nProgram Stopped."
+        exit(1)
