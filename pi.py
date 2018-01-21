@@ -58,6 +58,6 @@ try:
         output = pi(raw_input("Please input a number you want:"))
         print output
 except ValueError:
-    print "Is that a vaild input?"
+    print "Triggered Value Error.\nIs that a vaild input?"
     exit(1)
 # TODO:Fix module import problem.

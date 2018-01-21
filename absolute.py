@@ -17,6 +17,6 @@ try:
         result = abs(raw_input("Please input a number:"))
         print "Result=" + result
 except ValueError:
-    print "Is that a vaild input?"
+    print "Triggered Value Error.\nIs that a vaild input?"
     exit(1)
 # TODO:Fix module import problem.

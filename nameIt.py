@@ -13,7 +13,7 @@ try:
             firstName = words[0]
             lastName = words[1]
             words.pop(0)
-            words.pop(0)
+
             dropped = words
             print "First name is:" + firstName
             print "Last name is:" + lastName
@@ -37,6 +37,6 @@ try:
         print "Result=" + str(result)
 
 except ValueError:
-    print "Is that a vaild input?"
+    print "Triggered Value Error.\nIs that a vaild input?"
     exit(1)
 # TODO:Fix module import problem.
