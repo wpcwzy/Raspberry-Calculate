@@ -27,7 +27,7 @@ try:
                     return dropped
         else:
             print"Wrong Input!"
-            return -1
+            exit(1)
 
 
     if __name__ == "__main__":
