@@ -13,7 +13,7 @@ try:
             firstName = words[0]
             lastName = words[1]
             words.pop(0)
-
+            words.pop(0)
             dropped = words
             print "First name is:" + firstName
             print "Last name is:" + lastName

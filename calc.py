@@ -44,7 +44,7 @@ def nameIt(inputName, outputThing):  # if outputThing=0,then output the first na
             firstName = words[0]
             lastName = words[1]
             words.pop(0)
-
+            words.pop(0)
             dropped = words
             if outputThing == 0:
                 return firstName
